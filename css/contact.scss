@@ -1,0 +1,67 @@
+@import "./variables";
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  width: 90%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .contact-info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    .contact-title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .text {
+      margin-bottom: 1rem;
+      a {
+        text-decoration: none;
+        color: $primaryColor;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  .map {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and(min-width: 800px) {
+  .title {
+    width: 70%;
+  }
+  .content {
+    width: 70%;
+    flex-direction: row;
+
+    .contact-info {
+      flex: 1;
+    }
+
+    .map {
+      flex: 2;
+      margin-left: 1rem;
+    }
+  }
+}

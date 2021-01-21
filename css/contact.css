@@ -1,0 +1,91 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  width: 90%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.content {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .contact-info {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+}
+
+.content .contact-info .contact-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.content .contact-info .text {
+  margin-bottom: 1rem;
+}
+
+.content .contact-info .text a {
+  text-decoration: none;
+  color: #00B8F1;
+}
+
+.content .contact-info .text span {
+  font-weight: bold;
+}
+
+.content .map {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .title {
+    width: 70%;
+  }
+  .content {
+    width: 70%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .content .contact-info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .content .map {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    margin-left: 1rem;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
